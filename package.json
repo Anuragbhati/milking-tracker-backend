@@ -1,0 +1,15 @@
+{
+  "name": "milking-tracker",
+  "version": "1.0.0",
+  "description": "Dairy farmers often face challenges in ensuring a stress-free environment for cattle. Studies indicate that playing soothing music can reduce stress and increase milk yield by up to 3%. This assignment involves building a mobile-first web application that helps farmers track milking sessions while playing relaxing music for the cattle.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag Bhati",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1"
+  }
+}
