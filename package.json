@@ -4,12 +4,18 @@
   "description": "Dairy farmers often face challenges in ensuring a stress-free environment for cattle. Studies indicate that playing soothing music can reduce stress and increase milk yield by up to 3%. This assignment involves building a mobile-first web application that helps farmers track milking sessions while playing relaxing music for the cattle.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "author": "Anurag Bhati",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
+    "express-rate-limit": "^7.1.5",
     "mongoose": "^8.15.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
