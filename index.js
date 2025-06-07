@@ -4,10 +4,13 @@ const connectDB = require('./src/config/db');
 const sessionRoutes = require('./src/routes/sessions');
 const { errorHandler, notFound } = require('./src/middleware/errorHandler');
 const rateLimiter = require('./src/middleware/rateLimiter');
+const dotenv = require('dotenv');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+// Middlewares
+app.use(dotenv.config())
 app.use(rateLimiter);
 app.use(cors());
 app.use(express.json());
