@@ -6,11 +6,12 @@ const { errorHandler, notFound } = require('./src/middleware/errorHandler');
 const rateLimiter = require('./src/middleware/rateLimiter');
 const dotenv = require('dotenv');
 
+
+dotenv.config()
 const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Middlewares
-app.use(dotenv.config())
 app.use(rateLimiter);
 app.use(cors());
 app.use(express.json());
